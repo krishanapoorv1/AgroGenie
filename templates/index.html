@@ -1,0 +1,278 @@
+{% extends "layout.html" %}
+
+{% block nav %}
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="CropRecommendation.html">Crop</a></li>
+<li><a href="FertilizerRecommendation.html">Fertilizer</a></li>
+<li><a href="PesticideRecommendation.html">Pesticide</a></li>
+{% endblock %}
+
+{% block body %}
+<section class="tm-welcome-section">
+    <div class="container tm-position-relative">
+      <div class="tm-lights-container">
+        <img src="{{ url_for('static', filename='img/light.png') }}" alt="Light" class="light light-1" height="188px" width="200px">
+        <img src="{{ url_for('static', filename='img/light.png') }}" alt="Light" class="light light-2" height="188px" width="200px">
+        <img src="{{ url_for('static', filename='img/light.png') }}" alt="Light" class="light light-3" height="188px" width="200px">
+        <br>
+      </div>
+      <div class="row tm-welcome-content">
+        <br><br>
+        <h2 class="white-text tm-handwriting-font tm-welcome-header">
+          <img src="{{ url_for('static', filename='img/header-line.png') }}" alt="Line"
+            class="tm-header-line">&nbsp;Welcome To&nbsp;&nbsp;<img src="{{ url_for('static', filename='img/header-line.png') }}" alt="Line"
+            class="tm-header-line"></h2>
+        <h2 class="gold-text tm-welcome-header-2">AgroGenie</h2>
+        <p class="gray-text tm-welcome-description"><span
+            class="gold-text">Farm = AI + Crop + Fertilizer + Pesticide.</span> We take of your soil's health. We at <span class="gold-text">
+          AgroGenie</span>, honor <span
+                class="gold-text">the Indian Farmer's love, hard work and character.</span>
+          They help to feed a nation whose population is nearly 1.4 billion.
+          However their productivity is threatened by some natural factors that can ruin their crops and their livelihoods.
+          AgroGenie is a small initiative enhancing agriculture, make smart decisions to consider
+        the demographics of your field, the factors affecting your crop, as well as how to
+        keep them healthy for a super awesome yield.</p>
+        <br><br><br>
+      </div>
+      <img src="{{ url_for('static', filename='img/table-set.jpeg') }}" alt="Table Set" class="tm-table-set img-responsive" width="100%">
+    </div>
+  </section>
+  <div class="tm-main-section light-gray-bg">
+    <div class="container" id="main">
+      <section class="tm-section tm-section-margin-bottom-0 row">
+        <div class="col-lg-12 tm-section-header-container">
+          <h2 class="tm-section-header gold-text tm-handwriting-font">Our Services</h2>
+          <div class="tm-hr-container">
+            <hr class="tm-hr">
+          </div>
+        </div>
+        <div class="col-lg-12 tm-popular-items-container">
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/popular-2.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">C</span>rop Recommendation</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Which crop to grow, that is ideally suited to conditions?
+                Make an informed decision before starting the cultivation of crops.</p>
+              <div class="order-now-container">
+                <a href="CropRecommendation.html" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/popular-3.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">F</span>ertilizer Recommendation</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Which fertilizer to choose for the cultivated soil and prescribed crop for optimum production?
+              Provide your crops, the essential nutrients.</p>
+              <div class="order-now-container">
+                <a href="FertilizerRecommendation.html" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/popular-1.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">P</span>esticide Recommendation</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Pests are a big threat.
+                Use AgroGenie to know which pesticide to use to control pests before they cause potential damage to your
+                crop?</p>
+              <div class="order-now-container">
+                <a href="PesticideRecommendation.html" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="section fun-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="wrapper">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
+                   <p class="count-text ">Happy Customers</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="50" data-speed="1000"></h2>
+                  <p class="count-text ">Crops</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="80" data-speed="1000"></h2>
+                  <p class="count-text ">Fertilizer</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter end">
+                  <h2 class="timer count-title count-number" data-to="7" data-speed="1000"></h2>
+                  <p class="count-text ">Years Experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="team section" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="static/img/member-01.jpg" alt="">
+              <span class="category">Agronomist</span>
+              <h4>Apoorva Krishana</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="static/img/member-02.jpg" alt="">
+              <span class="category">Farmer</span>
+              <h4>Tushar Sharma</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="static/img/member-03.jpg" alt="">
+              <span class="category">Agriculture specialist</span>
+              <h4>Tanishka Saxena</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="static/img/member-04.jpg" alt="">
+              <span class="category">Crop manager</span>
+              <h4>Priyanka Singh</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="section testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="owl-carousel owl-testimonials">
+            <div class="item">
+              <p>“Please tell your friends or collegues about AgroGenie.Anyone can access the website and get the right Crop Recommendation. Thank you for visiting.”</p>
+              <div class="author">
+                <img src="static/img/testimonial-author.jpg" alt="">
+                <span class="category">Agriculture Engineer</span>
+                <h4>Stuti Singh</h4>
+              </div>
+            </div>
+            <div class="item">
+              <p>“The biggest issue most crops face in terms of pests do not come from the soil, but rather they fly in.”</p>
+              <div class="author">
+                <img src="static/img/testimonial-author.jpg" alt="">
+                <span class="category">Environmental Engineer</span>
+                <h4>Lara dutta</h4>
+              </div>
+            </div>
+            <div class="item">
+              <p>“Cover crops such as arugula and spring brassicas with row cover varieties that are sensitive to pest damage.So making sure the susceptible crops are safe is a great way to ensure the crop’s success. ”</p>
+              <div class="author">
+                <img src="static/img/testimonial-author.jpg" alt="">
+                <span class="category">Gardener</span>
+                <h4>Stella Blair</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <div class="section-heading">
+            <h6>TESTIMONIALS</h6>
+            <h2>What they say about us?</h2>
+            <p style="color:#505050; font-family: 'Poppins', sans-serif; margin:30px 0px 0px; font-size: 14px; line-height: 28px;">You can search about crops, pests and Fertilizers that is suitable to grow in your field depending upon the climatic and soil condition and various other factors,etc for free.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<footer>
+  <div class="tm-black-bg">
+    <div class="container">
+      <div class="row margin-bottom-60">
+        <nav class="col-lg-3 col-md-3 tm-footer-nav tm-footer-div">
+          <h3 class="tm-footer-div-title">Main Menu</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Our Services</a></li>
+          </ul>
+        </nav>
+        <div class="col-lg-5 col-md-5 tm-footer-div">
+          <h3 class="tm-footer-div-title">About Us</h3>
+          <p class="margin-top-15">AgroGenie is a free website built using <span style="color:#C79C60">AI</span> technology which help farmers to grow suitable crops in their field on the basis of soil and climatic condition </p>
+          <p class="margin-top-15">You can also get Recommendation for the Fertilizer and pesticide that you should use to grow specic crops and produce better yield.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 tm-footer-div">
+          <h3 class="tm-footer-div-title">Get Social</h3>
+          <p style="color: #949494; font-size:16px">You can connect with us on our social media for any queries.</p>
+          <div class="tm-social-icons-container">
+            <a href="#" class="tm-social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="tm-social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="tm-social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="tm-social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="tm-social-icon"><i class="fab fa-behance"></i></a>
+          </div>
+        </div>
+      </div>          
+    </div>  
+  </div>      
+  <div>
+    <div class="container">
+      <div class="row tm-copyright">
+       <p class="col-lg-12 small copyright-text text-center">Copyright &copy; 2023 AgroGenie</p>
+     </div>  
+   </div>
+ </div>
+</footer> <!-- Footer content-->  
+{% endblock %}
